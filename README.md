@@ -19,10 +19,10 @@ kubectl apply -f deployment.yaml
 
 Now you need to be able to connect to the application, which you have exposed as a Service in Kubernetes. One way to do that, which works great at development time, is to create an SSH tunnel:
 
-#Expose Services
+# Expose Services
 kubectl port-forward svc/demo 8080:8080
 
-#Test the service in deployed Kubernetes
+# Test the service in Kubernetes
 curl localhost:8080/actuator/health
 
 # What is Kubernetes
